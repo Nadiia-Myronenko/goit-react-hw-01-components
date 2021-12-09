@@ -1,14 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import defaultAvatar from "./default-avatar.png";
 
-export default function Profile({
-  username,
-  tag,
-  location,
-  avatar = defaultAvatar,
-  stats,
-}) {
+export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className="profile">
       <div className="description">
