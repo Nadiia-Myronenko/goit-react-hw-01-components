@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import s from "./Statistics.module.css";
-import getRandomColor from "./random-color";
+import getRandomColor from "./random-color"; //generates only dark colors
 
 export default function Statistics({ title, stats }) {
   return (
@@ -15,8 +15,8 @@ export default function Statistics({ title, stats }) {
             key={id}
             style={{ backgroundColor: getRandomColor() }}
           >
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+            <span className={s.Label}>{label}</span>
+            <span className={s.Percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>

@@ -1,12 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from "./Friend-list-item.module.css";
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item">
-      <span className="status"></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+    <li className={s.Item}>
+      {isOnline ? (
+        <span className={s.Status + " " + s.StatusOnline}></span>
+      ) : (
+        <span className={s.Status}></span>
+      )}
+
+      <img className={s.Avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.Name}>{name}</p>
     </li>
   );
 }

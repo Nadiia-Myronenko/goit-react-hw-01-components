@@ -1,11 +1,11 @@
 export default function getRandomColor() {
-  const lightColor =
+  const darkColor =
     "rgb(" +
-    (Math.floor((256 - 99) * Math.random()) + 100) +
+    Math.random() * 200 +
     "," +
-    (Math.floor((256 - 99) * Math.random()) + 100) +
+    Math.random() * 200 +
     "," +
-    (Math.floor((256 - 99) * Math.random()) + 100) +
+    Math.random() * 200 +
     ")";
-  return lightColor;
+  return darkColor;
 }
