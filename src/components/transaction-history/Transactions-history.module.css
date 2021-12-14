@@ -1,0 +1,31 @@
+.TransactionTable {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #000;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+}
+
+.TransactionTable th {
+  background-color: #09f1e6;
+  border-right: 1px solid #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.TransactionTable th:last-child {
+  border-right: none;
+}
+.TransactionTable td {
+  border-right: 1px solid rgb(219, 217, 217);
+  padding: 10px;
+}
+.TransactionTable tr:nth-last-child(2n + 1) {
+  background-color: rgb(241, 240, 240);
+}
