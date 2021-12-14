@@ -29,3 +29,6 @@
 .TransactionTable tr:nth-last-child(2n + 1) {
   background-color: #f1f0f0;
 }
+.TransactionTable td:first-child {
+  text-transform: capitalize;
+}
