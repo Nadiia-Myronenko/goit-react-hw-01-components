@@ -12,10 +12,12 @@
   height: 20px;
   border-radius: 50%;
   margin-right: 20px;
-  background-color: #ff0000;
 }
 .StatusOnline {
   background-color: #008000;
+}
+.StatusOffline {
+  background-color: #ff0000;
 }
 .Avatar {
   margin-right: 20px;
