@@ -6,7 +6,7 @@ export default function FriendListItem({ avatar, name, isOnline }) {
   const statusType = isOnline ? "StatusOnline" : "StatusOffline";
   return (
     <li className={s.Item}>
-      <span className={`${s.Status} ${s[statusType]}`}></span>
+      <span className={s[statusType]}></span>
       <img className={s.Avatar} src={avatar} alt="User avatar" width="48" />
       <p className={s.Name}>{name}</p>
     </li>

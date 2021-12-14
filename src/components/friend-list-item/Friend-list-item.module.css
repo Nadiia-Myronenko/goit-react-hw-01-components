@@ -14,9 +14,11 @@
   margin-right: 20px;
 }
 .StatusOnline {
+  composes: Status;
   background-color: #008000;
 }
 .StatusOffline {
+  composes: Status;
   background-color: #ff0000;
 }
 .Avatar {
